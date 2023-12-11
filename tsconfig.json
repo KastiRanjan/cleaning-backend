@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "es6", "es2018"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./src/types", "node_modules/@types"],
+    "baseUrl": "src/",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "src/orm/seeds/1590519635107-SeedUser.ts",
+    "src/middleware/validation/auth",
+    "src/orm/migrations/1697173424731-init.ts"
+  ],
+  "exclude": ["node_modules", "test/**/*.ts"]
+}
